@@ -8,11 +8,7 @@ export default function PinnedProjects() {
   return (
     <section id="projects">
       <h2>Pinned Projects</h2>
-      <div className="projects-grid">
-        {projects.map((p, i) => (
-          <PinnedProjectCard key={i} project={p} />
-        ))}
-      </div>
+      <div className="projects-grid"></div>
     </section>
   );
 }

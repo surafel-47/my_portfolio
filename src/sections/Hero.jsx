@@ -12,9 +12,10 @@ export default function HeroSection() {
             </p>
           </div>
           <p class="text-lg text-secondary-text leading-relaxed">
-            Passionate about building beautiful, performant web and mobile
-            applications. I specialize in creating seamless user experiences
-            with modern technologies.
+            I'm a full-stack developer specializing in Flutter, Vue.js, Django,
+            and Express. I build mobile-first and web applications that are
+            fast, scalable, and focused on solving real-world problems with
+            clean code and smooth UX.
           </p>
           <div class="flex gap-4 pt-4">
             <button class="px-8 py-3 bg-accent animated-fill transition-colors text-white hover:text-background cursor-pointer  font-semibold">
