@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-background text-foreground transition-colors duration-300">
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border"
+    >
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold font-display">Dev</h1>
+        <button
+          id="themeToggle"
+          class="p-2 rounded-lg hover:bg-secondary transition-colors"
+        >
+          <i class="fas fa-moon text-lg"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <div class="space-y-6">
+          <div>
+            <h2
+              class="text-5xl md:text-6xl font-bold font-display leading-tight mb-4"
+            >
+              Full-Stack Developer
+            </h2>
+            <p class="text-xl text-secondary-text font-display">
+              Flutter · Vue.js · Django · Express
+            </p>
+          </div>
+          <p class="text-lg text-secondary-text leading-relaxed">
+            Passionate about building beautiful, performant web and mobile
+            applications. I specialize in creating seamless user experiences
+            with modern technologies.
+          </p>
+          <div class="flex gap-4 pt-4">
+            <button
+              class="px-8 py-3 bg-accent text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              Download CV
+            </button>
+            <button
+              class="px-8 py-3 border-2 border-accent text-accent rounded-lg font-semibold hover:bg-accent hover:text-white transition-all"
+            >
+              Get in Touch
+            </button>
+          </div>
+          <div class="flex gap-6 pt-8">
+            <a
+              href="#"
+              class="text-2xl text-secondary-text hover:text-accent transition-colors"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="#"
+              class="text-2xl text-secondary-text hover:text-accent transition-colors"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="#"
+              class="text-2xl text-secondary-text hover:text-accent transition-colors"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="#"
+              class="text-2xl text-secondary-text hover:text-accent transition-colors"
+            >
+              <i class="fab fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <img
+            src="/placeholder.svg?height=400&width=400"
+            alt="Profile"
+            class="w-80 h-80 rounded-2xl object-cover shadow-2xl"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-20 px-6 bg-secondary">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-4xl font-bold font-display mb-12 text-center">
+          Experience
+        </h3>
+        <div class="space-y-8">
+          <div
+            class="bg-background p-8 rounded-xl border border-border hover:border-accent transition-colors"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h4 class="text-2xl font-bold font-display">
+                  Senior Full-Stack Developer
+                </h4>
+                <p class="text-accent font-semibold">Tech Company Inc.</p>
+              </div>
+              <span class="text-secondary-text">2022 - Present</span>
+            </div>
+            <p class="text-secondary-text leading-relaxed">
+              Led development of scalable web applications using Vue.js and
+              Django. Mentored junior developers and established best practices
+              for the team.
+            </p>
+          </div>
+
+          <div
+            class="bg-background p-8 rounded-xl border border-border hover:border-accent transition-colors"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h4 class="text-2xl font-bold font-display">
+                  Full-Stack Developer
+                </h4>
+                <p class="text-accent font-semibold">StartUp Labs</p>
+              </div>
+              <span class="text-secondary-text">2020 - 2022</span>
+            </div>
+            <p class="text-secondary-text leading-relaxed">
+              Built mobile apps with Flutter and backend services with
+              Express.js. Improved app performance by 40% through optimization.
+            </p>
+          </div>
+
+          <div
+            class="bg-background p-8 rounded-xl border border-border hover:border-accent transition-colors"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <div>
+                <h4 class="text-2xl font-bold font-display">
+                  Junior Developer
+                </h4>
+                <p class="text-accent font-semibold">Digital Agency</p>
+              </div>
+              <span class="text-secondary-text">2019 - 2020</span>
+            </div>
+            <p class="text-secondary-text leading-relaxed">
+              Developed responsive websites and web applications. Collaborated
+              with designers to implement pixel-perfect designs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-4xl font-bold font-display mb-12 text-center">
+          Featured Projects
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group bg-secondary rounded-xl overflow-hidden border border-border hover:border-accent transition-all hover:shadow-xl"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-accent to-accent/50 overflow-hidden"
+            >
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                alt="Project"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h4 class="text-xl font-bold font-display mb-2">
+                E-Commerce Platform
+              </h4>
+              <p class="text-secondary-text mb-4">
+                Full-stack e-commerce solution with Vue.js frontend and Django
+                backend.
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold"
+                  >Vue.js</span
+                >
+                <span
+                  class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold"
+                  >Django</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-secondary rounded-xl overflow-hidden border border-border hover:border-accent transition-all hover:shadow-xl"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-accent to-accent/50 overflow-hidden"
+            >
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                alt="Project"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h4 class="text-xl font-bold font-display mb-2">
+                Fitness Tracker App
+              </h4>
+              <p class="text-secondary-text mb-4">
+                Cross-platform mobile app for tracking workouts and nutrition.
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold"
+                  >Flutter</span
+                >
+                <span
+                  class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold"
+                  >Firebase</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group bg-secondary rounded-xl overflow-hidden border border-border hover:border-accent transition-all hover:shadow-xl"
+          >
+            <div
+              class="h-48 bg-gradient-to-br from-accent to-accent/50 overflow-hidden"
+            >
+              <img
+                src="/placeholder.svg?height=200&width=300"
+                alt="Project"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="p-6">
+              <h4 class="text-xl font-bold font-display mb-2">
+                Analytics Dashboard
+              </h4>
+              <p class="text-secondary-text mb-4">
+                Real-time analytics dashboard with interactive charts and
+                reports.
+              </p>
+              <div class="flex gap-2 flex-wrap">
+                <span
+                  class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold"
+                  >React</span
+                >
+                <span
+                  class="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-semibold"
+                  >Express</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-20 px-6 bg-secondary">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-4xl font-bold font-display mb-12 text-center">
+          Skills & Technologies
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-background p-6 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg"
+          >
+            <div class="text-4xl mb-4 text-accent">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h4 class="text-lg font-bold font-display mb-2">JavaScript</h4>
+            <p class="text-secondary-text text-sm">
+              Modern ES6+ with async/await and functional programming
+            </p>
+          </div>
+
+          <div
+            class="bg-background p-6 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg"
+          >
+            <div class="text-4xl mb-4 text-accent">
+              <i class="fab fa-vuejs"></i>
+            </div>
+            <h4 class="text-lg font-bold font-display mb-2">Vue.js</h4>
+            <p class="text-secondary-text text-sm">
+              Composition API, state management with Pinia
+            </p>
+          </div>
+
+          <div
+            class="bg-background p-6 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg"
+          >
+            <div class="text-4xl mb-4 text-accent">
+              <i class="fab fa-python"></i>
+            </div>
+            <h4 class="text-lg font-bold font-display mb-2">Python & Django</h4>
+            <p class="text-secondary-text text-sm">
+              REST APIs, ORM, authentication and authorization
+            </p>
+          </div>
+
+          <div
+            class="bg-background p-6 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg"
+          >
+            <div class="text-4xl mb-4 text-accent">
+              <i class="fab fa-flutter"></i>
+            </div>
+            <h4 class="text-lg font-bold font-display mb-2">Flutter</h4>
+            <p class="text-secondary-text text-sm">
+              Cross-platform mobile development for iOS and Android
+            </p>
+          </div>
+
+          <div
+            class="bg-background p-6 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg"
+          >
+            <div class="text-4xl mb-4 text-accent">
+              <i class="fas fa-database"></i>
+            </div>
+            <h4 class="text-lg font-bold font-display mb-2">Databases</h4>
+            <p class="text-secondary-text text-sm">
+              PostgreSQL, MongoDB, Firebase, Redis
+            </p>
+          </div>
+
+          <div
+            class="bg-background p-6 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg"
+          >
+            <div class="text-4xl mb-4 text-accent">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h4 class="text-lg font-bold font-display mb-2">DevOps</h4>
+            <p class="text-secondary-text text-sm">
+              Git, Docker, CI/CD, AWS, Vercel deployment
+            </p>
+          </div>
+
+          <div
+            class="bg-background p-6 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg"
+          >
+            <div class="text-4xl mb-4 text-accent">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h4 class="text-lg font-bold font-display mb-2">
+              Responsive Design
+            </h4>
+            <p class="text-secondary-text text-sm">
+              Mobile-first, Tailwind CSS, UI/UX principles
+            </p>
+          </div>
+
+          <div
+            class="bg-background p-6 rounded-xl border border-border hover:border-accent transition-all hover:shadow-lg"
+          >
+            <div class="text-4xl mb-4 text-accent">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h4 class="text-lg font-bold font-display mb-2">Tools & More</h4>
+            <p class="text-secondary-text text-sm">
+              Webpack, Vite, Jest, Figma, VS Code
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-4xl font-bold font-display mb-12 text-center">
+          Certificates & Achievements
+        </h3>
+        <div class="space-y-6">
+          <div
+            class="bg-secondary p-8 rounded-xl border border-border hover:border-accent transition-all flex justify-between items-center"
+          >
+            <div>
+              <h4 class="text-xl font-bold font-display mb-2">
+                Full-Stack Web Development
+              </h4>
+              <p class="text-secondary-text">Udemy · Issued 2023</p>
+            </div>
+            <button
+              class="px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              View Certificate
+            </button>
+          </div>
+
+          <div
+            class="bg-secondary p-8 rounded-xl border border-border hover:border-accent transition-all flex justify-between items-center"
+          >
+            <div>
+              <h4 class="text-xl font-bold font-display mb-2">
+                Advanced Flutter Development
+              </h4>
+              <p class="text-secondary-text">Google · Issued 2023</p>
+            </div>
+            <button
+              class="px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              View Certificate
+            </button>
+          </div>
+
+          <div
+            class="bg-secondary p-8 rounded-xl border border-border hover:border-accent transition-all flex justify-between items-center"
+          >
+            <div>
+              <h4 class="text-xl font-bold font-display mb-2">
+                AWS Solutions Architect Associate
+              </h4>
+              <p class="text-secondary-text">
+                Amazon Web Services · Issued 2022
+              </p>
+            </div>
+            <button
+              class="px-6 py-2 bg-accent text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 px-6 bg-secondary">
+      <div class="max-w-6xl mx-auto text-center">
+        <h3 class="text-4xl font-bold font-display mb-6">
+          Let's Work Together
+        </h3>
+        <p class="text-lg text-secondary-text mb-8 max-w-2xl mx-auto">
+          I'm always interested in hearing about new projects and opportunities.
+          Feel free to reach out!
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="mailto:hello@example.com"
+            class="px-8 py-3 bg-accent text-white rounded-lg font-semibold hover:opacity-90 transition-opacity"
+          >
+            Send Email
+          </a>
+          <a
+            href="#"
+            class="px-8 py-3 border-2 border-accent text-accent rounded-lg font-semibold hover:bg-accent hover:text-white transition-all"
+          >
+            Schedule Call
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t border-border py-12 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <h4 class="font-bold font-display mb-4">Navigation</h4>
+            <ul class="space-y-2 text-secondary-text">
+              <li>
+                <a href="#" class="hover:text-accent transition-colors">Home</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold font-display mb-4">Social</h4>
+            <ul class="space-y-2 text-secondary-text">
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >GitHub</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >Email</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold font-display mb-4">Legal</h4>
+            <ul class="space-y-2 text-secondary-text">
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >Terms of Service</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-accent transition-colors"
+                  >Sitemap</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-border pt-8 flex justify-between items-center"
+        >
+          <p class="text-secondary-text">&copy; 2025 All rights reserved.</p>
+          <p class="text-secondary-text">
+            Crafted with <span class="text-accent">❤</span> by Dev
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

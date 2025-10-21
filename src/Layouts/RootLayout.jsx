@@ -4,7 +4,7 @@ import NavBar from "../components/Navbar";
 
 function RootLayout() {
   return (
-    <div class="w-screen h-[2000px] bg-red-500">
+    <div class="w-full h-[2000px] bg-gray-800">
       <NavBar />
       <div>
         <Outlet />
