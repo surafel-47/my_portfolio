@@ -1,3 +1,5 @@
+import ProfileImage from "../assets/react.svg";
+
 export default function HeroSection() {
   return (
     <section id="hero" class="bg-background pt-32 pb-20 px-6">
@@ -54,9 +56,9 @@ export default function HeroSection() {
         </div>
         <div class="flex justify-center">
           <img
-            src="/placeholder.svg?height=400&width=400"
+            src={ProfileImage}
             alt="Profile"
-            class="w-80 h-80 rounded-2xl object-cover shadow-2xl"
+            class="w-80 h-80  object-fit p-2 border border-[#0000000c] shadow-sm"
           />
         </div>
       </div>
