@@ -63,6 +63,7 @@ html.dark {
 
 body {
   font-family: "Inter", sans-serif;
+   font-family: monospace;
 }
 
 .font-display {
@@ -158,4 +159,18 @@ body {
 
 .glow-effect:hover {
   box-shadow: 0 0 20px rgba(var(--accent), 0.7);
+}
+
+
+
+
+/* Boxy containers */
+.box {
+  background-color: var(--background);
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: rotate(-0.3deg) translateY(-10px);
+  box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.2);
 }

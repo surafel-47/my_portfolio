@@ -36,7 +36,7 @@ export default function HeroSection() {
                 href={info.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`text-2xl text-secondary-text hover:text-accent transition-colors ${info.color}`}
+                className={`text-2xl text-foreground animated-fill hover:text-background hover:border-background border border-[#795c5caf] p-1`}
               >
                 <i className={info.icon}></i>
               </a>

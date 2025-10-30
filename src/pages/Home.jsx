@@ -3,6 +3,7 @@ import Experience from "../sections/Experience";
 import PinnedProjectsSection from "../sections/PinnedProjects";
 import CertificatesSection from "../sections/Certificates";
 import ContactSection from "../sections/Contact";
+import Footer from "../components/Footer";
 export default function Home() {
   return (
     <main>
@@ -11,6 +12,7 @@ export default function Home() {
       <PinnedProjectsSection />
       <CertificatesSection />
       <ContactSection />
+      <Footer />
     </main>
   );
 }

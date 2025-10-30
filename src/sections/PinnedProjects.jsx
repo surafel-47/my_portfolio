@@ -82,9 +82,9 @@ function ProjectPreview({ project }) {
     project.media?.[currentImageIndex] || "/project-showcase.jpg";
 
   return (
-    <div className="group border border-border overflow-hidden hover:border-primary transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
+    <div className="group border-[1px] overflow-hidden box">
       {/* Image Carousel Container */}
-      <div className="relative h-64 md:h-[500px] bg-muted overflow-hidden group">
+      <div className="relative h-64 md:h-[500px] overflow-hidden ">
         {/* Current Image */}
         <img
           src={currentImage || "../assets/react.svg"}

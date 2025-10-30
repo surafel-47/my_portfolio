@@ -31,7 +31,7 @@ export default function ContactSection() {
                 ? undefined
                 : "noopener noreferrer"
             }
-            className="group border border-border p-4 hover:border-primary animated-fill text-foreground hover:text-background "
+            className="group border border-border p-4 hover:border-primary animated-fill box text-foreground hover:text-background "
           >
             {/* Icon */}
             <div className="mb-4">
