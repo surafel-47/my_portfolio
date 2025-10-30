@@ -112,6 +112,30 @@ body {
   width: 100%;
 }
 
+/* Animated fill effect for buttons */
+.animated-fill-opp {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.animated-fill-opp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--background);
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.animated-fill-opp:hover::before {
+  width: 100%;
+}
+
+
 /* Gradient text effect */
 .gradient-text {
   background: linear-gradient(to right, var(--accent), var(--secondary));

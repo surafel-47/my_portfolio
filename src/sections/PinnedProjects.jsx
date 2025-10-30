@@ -47,10 +47,10 @@ export default function PinnedProjectsSection() {
         <div className="flex justify-center">
           <a
             href="#projects"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-full font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all duration-300 hover:scale-105"
+            class="group inline-flex items-center gap-3 px-8 py-4 animated-fill-opp transition-colors  bg-foreground text-background border border-foreground hover:text-foreground cursor-pointer"
           >
             <span>View All Projects</span>
-            <i className="fas fa-arrow-right group-hover:translate-x-1 transition-transform duration-300"></i>
+            <i className="fas fa-arrow-right"></i>
           </a>
         </div>
       </section>
@@ -165,7 +165,7 @@ function ProjectDetailModal({ project, onClose }) {
 
     window.addEventListener("keydown", handleEscape);
     return () => window.removeEventListener("keydown", handleEscape);
-  }, []);
+  });
 
   const handleClose = () => {
     setIsOpen(false);

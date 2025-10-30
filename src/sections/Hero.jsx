@@ -29,51 +29,18 @@ export default function HeroSection() {
               Get in Touch
             </button>
           </div>
-          <div className="flex gap-6 pt-8 ">
-            <a
-              href={ContactInfo.GITHUB}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-secondary-text hover:text-accent transition-colors"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-
-            <a
-              href={ContactInfo.LINKEDIN}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-secondary-text hover:text-accent transition-colors"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-
-            <a
-              href={ContactInfo.TELEGRAM}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-secondary-text hover:text-accent transition-colors"
-            >
-              <i className="fab fa-telegram"></i>
-            </a>
-
-            <a
-              href={`mailto:${ContactInfo.EMAIL}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-secondary-text hover:text-accent transition-colors"
-            >
-              <i className="fas fa-envelope"></i>
-            </a>
-
-            <a
-              href={`tel:${ContactInfo.PHONE}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl text-secondary-text hover:text-accent transition-colors"
-            >
-              <i className="fas fa-phone"></i>
-            </a>
+          <div className="flex gap-6 pt-8">
+            {ContactInfo.map((info) => (
+              <a
+                key={info.id}
+                href={info.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-2xl text-secondary-text hover:text-accent transition-colors ${info.color}`}
+              >
+                <i className={info.icon}></i>
+              </a>
+            ))}
           </div>
         </div>
         <div class="flex justify-center">

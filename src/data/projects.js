@@ -173,3 +173,20 @@ export const projects = {
     // Add more C# projects as needed
   ],
 };
+
+
+export const certificates = [
+  {
+    id: 1,
+    title: "Full Stack - Web Development Certification",
+    issuedBy: "MMCY TECH",
+    issuedByLink: "https://mmcy.com",
+    image: "/certificates/mmcy_full_stack/preview.png",
+    downloadLink: "/certificates/mmcy_full_stack/Surafel Zewdu - Full Stack Web Dev Certificate",
+    issueDate: "",
+    expiryDate: "",
+    credentialId: "",
+    credentialUrl: "",
+  },
+];
+
