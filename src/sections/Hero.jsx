@@ -1,4 +1,6 @@
+// import ProfileImage from "/profile.jpg";
 import ProfileImage from "../assets/react.svg";
+import ContactInfo from "../data/contact-info.js";
 
 export default function HeroSection() {
   return (
@@ -27,30 +29,50 @@ export default function HeroSection() {
               Get in Touch
             </button>
           </div>
-          <div class="flex gap-6 pt-8">
+          <div className="flex gap-6 pt-8 ">
             <a
-              href="#"
-              class="text-2xl text-secondary-text hover:text-accent transition-colors"
+              href={ContactInfo.GITHUB}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-secondary-text hover:text-accent transition-colors"
             >
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
+
             <a
-              href="#"
-              class="text-2xl text-secondary-text hover:text-accent transition-colors"
+              href={ContactInfo.LINKEDIN}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-secondary-text hover:text-accent transition-colors"
             >
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
+
             <a
-              href="#"
-              class="text-2xl text-secondary-text hover:text-accent transition-colors"
+              href={ContactInfo.TELEGRAM}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-secondary-text hover:text-accent transition-colors"
             >
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-telegram"></i>
             </a>
+
             <a
-              href="#"
-              class="text-2xl text-secondary-text hover:text-accent transition-colors"
+              href={`mailto:${ContactInfo.EMAIL}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-secondary-text hover:text-accent transition-colors"
             >
-              <i class="fab fa-telegram"></i>
+              <i className="fas fa-envelope"></i>
+            </a>
+
+            <a
+              href={`tel:${ContactInfo.PHONE}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl text-secondary-text hover:text-accent transition-colors"
+            >
+              <i className="fas fa-phone"></i>
             </a>
           </div>
         </div>
@@ -58,7 +80,7 @@ export default function HeroSection() {
           <img
             src={ProfileImage}
             alt="Profile"
-            class="w-80 h-80  object-fit p-2 border border-[#0000000c] shadow-sm"
+            class="w-80  p-2 border border-[#0000000c] shadow-sm"
           />
         </div>
       </div>

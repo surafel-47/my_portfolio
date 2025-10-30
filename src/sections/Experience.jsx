@@ -161,15 +161,6 @@ export default function Experience() {
             </div>
           </div>
         </div>
-
-        <div className="flex justify-center mt-12">
-          <a
-            href="projects.html"
-            className="inline-block bg-gradient-to-r from-accent to-secondary text-white px-12 py-4 rounded-full hover:from-secondary hover:to-accent transition-all duration-300 glow-effect text-lg"
-          >
-            <i className="fas fa-rocket mr-3"></i>Explore My Projects
-          </a>
-        </div>
       </div>
     </section>
   );
