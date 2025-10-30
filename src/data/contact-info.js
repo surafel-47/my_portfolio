@@ -1,4 +1,4 @@
-const ContactInfos = [
+export const ContactInfos = [
     {
         id: 1,
         label: "Email",
@@ -42,4 +42,3 @@ const ContactInfos = [
 ];
 
 
-export default ContactInfos;

@@ -1,4 +1,4 @@
-import { ContactInfos } from "../data/contact-info";
+import { ContactInfos } from "../data/contact-info.js";
 export default function ContactSection() {
   return (
     <section id="contact" className="py-20 max-w-[80vw] mx-auto px-4">

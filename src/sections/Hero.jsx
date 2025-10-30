@@ -1,6 +1,6 @@
 // import ProfileImage from "/profile.jpg";
 import ProfileImage from "../assets/react.svg";
-import ContactInfo from "../data/contact-info.js";
+import { ContactInfos } from "../data/contact-info.js";
 
 export default function HeroSection() {
   return (
@@ -30,7 +30,7 @@ export default function HeroSection() {
             </button>
           </div>
           <div className="flex gap-6 pt-8">
-            {ContactInfo.map((info) => (
+            {ContactInfos.map((info) => (
               <a
                 key={info.id}
                 href={info.link}
