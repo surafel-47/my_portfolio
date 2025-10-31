@@ -34,6 +34,7 @@ export default function PinnedProjectsSection() {
         {pinnedProjects.map((project) => (
           <ProjectPreview key={project.id} project={project} />
         ))}
+        
       </div>
 
       <div className="flex justify-center">
