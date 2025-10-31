@@ -22,7 +22,7 @@ export default function Experience() {
                   <a
                     href="https://www.mmcyltd.com"
                     target="_blank"
-                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-md"
+                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-lg"
                   >
                     Software Developer - MMCY Tech
                     <i className="ml-3 fas fa-external-link-alt"></i>
@@ -44,7 +44,7 @@ export default function Experience() {
                   <a
                     href="https://www.era.gov.et"
                     target="_blank"
-                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-md"
+                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-lg"
                   >
                     Full Stack Developer - Ethiopian Road Authority
                     <i className="ml-3 fas fa-external-link-alt"></i>
@@ -72,7 +72,7 @@ export default function Experience() {
                   <a
                     href="https://www.crooze.com"
                     target="_blank"
-                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-md"
+                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-lg"
                   >
                     Mobile App Developer - Crooze Company
                     <i className="ml-3 fas fa-external-link-alt"></i>
@@ -93,16 +93,16 @@ export default function Experience() {
           {/* Education */}
           <div className="space-y-8">
             <h3 className="text-xl font-semibold mb-6 flex items-center gap-3">
-              <i className="fas fa-graduation-cap text-accent"></i>Education
+              <i className="fas fa-graduation-cap text-foreground"></i>Education
             </h3>
-            <div className="border-l-4 border-accent pl-6 space-y-8">
+            <div className="border-l-4 border-foreground pl-6 space-y-8">
               {/* MMCY Bootcamp */}
               <div className="glass-effect p-6 box">
                 <div className="flex justify-between items-start mb-3">
                   <a
                     href="https://www.mmcy.com/bootcamp"
                     target="_blank"
-                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-md"
+                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-lg"
                   >
                     MMCY FullStack Developer Bootcamp
                     <i className="ml-3 fas fa-external-link-alt"></i>
@@ -123,9 +123,9 @@ export default function Experience() {
                   <a
                     href="https://www.hilcoe.edu.et"
                     target="_blank"
-                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-md"
+                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-lg"
                   >
-                    BSc in Computer Science
+                    BSc Computer Science
                     <i className="ml-3 fas fa-external-link-alt"></i>
                   </a>
                   <div className="flex items-center gap-2 text-sm font-bold text-secondary-text">
@@ -144,7 +144,7 @@ export default function Experience() {
                   <a
                     href="https://learn.microsoft.com/en-us/certifications/azure-fundamentals/"
                     target="_blank"
-                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-md"
+                    className="text-foreground hover:text-accent underline transition-colors font-semibold text-lg"
                   >
                     Microsoft Azure Fundamentals
                     <i className="ml-3 fas fa-external-link-alt"></i>

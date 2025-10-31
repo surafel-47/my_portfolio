@@ -18,7 +18,7 @@ export default function ProjectsPage() {
   }, [activeCategory]);
 
   return (
-    <main className="min-h-screen bg-background py-12 px-4 md:px-8">
+    <main className="min-h-screen bg-background pt-32 pb-20  md:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12">

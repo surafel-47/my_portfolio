@@ -30,6 +30,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
   color-scheme: light;
 }
 
@@ -174,4 +175,38 @@ body {
 .box:hover {
   transform: rotate(-0.3deg) translateY(-10px);
   box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Horizontal scrollbar height is the same */
+  height: 12px;
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  /* Track color */
+  border-radius: 4px;
+  /* Rounded corners for track */
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  /* Thumb color */
+  border-radius: 0;
+  /* Boxy: 0 for sharp corners */
+  border: 3px solid #f0f0f0;
+  /* Padding around thumb to create “box” effect */
+}
+
+/* Optional: hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #333;
 }

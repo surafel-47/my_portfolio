@@ -4,7 +4,7 @@ import { ContactInfos } from "../data/contact-info.js";
 
 export default function HeroSection() {
   return (
-    <section id="hero" class="bg-background pt-32 pb-20 px-6">
+    <section id="about" class="bg-background pt-32 pb-20 px-6">
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
           <div>
@@ -25,9 +25,12 @@ export default function HeroSection() {
             <button class="px-8 py-3 bg-foreground text-background animated-fill-opp box border hover:border-foreground transition-colors  hover:text-foreground cursor-pointer  font-semibold">
               Download CV
             </button>
-            <button class="px-8 py-3 border-2 border-accent text-foreground box  font-semibold animated-fill cursor-pointer  hover:text-white transition-all">
+            <a
+              href="#contact"
+              class="px-8 py-3 border-2 border-foreground text-foreground box  font-semibold animated-fill cursor-pointer  hover:text-white transition-all"
+            >
               Get in Touch
-            </button>
+            </a>
           </div>
           <div className="flex gap-6 pt-8">
             {ContactInfos.map((info) => (

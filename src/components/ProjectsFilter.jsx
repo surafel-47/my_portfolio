@@ -4,23 +4,30 @@ export default function ProjectsFilter({
   onCategoryChange,
 }) {
   return (
-    <div className="flex flex-wrap gap-2 mb-8">
-      <a
-        variant={activeCategory === "all" ? "default" : "outline"}
+    <div className="flex flex-wrap gap-5 mb-8">
+      <button
         onClick={() => onCategoryChange("all")}
-        className="border border-foreground/20"
+        className={`border border-foreground/20 px-4 py-2 h-10 box ${
+          activeCategory === "all"
+            ? "bg-foreground text-background"
+            : "bg-transparent text-foreground hover:bg-foreground/10"
+        }`}
       >
         All Projects
-      </a>
+      </button>
+
       {categories.map((category) => (
-        <a
+        <button
           key={category}
-          variant={activeCategory === category ? "default" : "outline"}
           onClick={() => onCategoryChange(category)}
-          className="border border-foreground/20 capitalize"
+          className={`border border-foreground/20 capitalize px-4 py-2 h-10 box ${
+            activeCategory === category
+              ? "bg-foreground text-background"
+              : "bg-transparent text-foreground hover:bg-foreground/10"
+          }`}
         >
           {category}
-        </a>
+        </button>
       ))}
     </div>
   );

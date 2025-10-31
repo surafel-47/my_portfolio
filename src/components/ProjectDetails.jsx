@@ -171,7 +171,7 @@ export default function ProjectDetailModal({ project, onClose }) {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 animated-fill text-foreground hover:text-background border border-foreground font-medium "
+                      className="inline-flex items-center gap-2 px-6 py-3 box animated-fill-opp bg-foreground text-background hover:text-foreground border border-backround font-medium "
                     >
                       <i className="fas fa-external-link-alt"></i>
                       View Live
@@ -182,7 +182,7 @@ export default function ProjectDetailModal({ project, onClose }) {
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 animated-fill text-foreground hover:text-background border border-foreground font-medium "
+                      className="inline-flex items-center gap-2 px-6 py-3 box animated-fill-opp bg-foreground text-background hover:text-foreground border border-foreground font-medium "
                     >
                       <i className="fab fa-github"></i>
                       View Code

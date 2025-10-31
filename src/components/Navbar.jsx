@@ -1,11 +1,12 @@
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   const [isDark, setIsDark] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  // Sync theme with html.dark class
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add("dark");
@@ -14,36 +15,32 @@ export default function Navbar() {
     }
   }, [isDark]);
 
-  // Toggle theme
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-  };
+  const toggleTheme = () => setIsDark(!isDark);
+  const handleLinkClick = () => setIsMobileMenuOpen(false);
 
-  const handleLinkClick = () => {
-    setIsMobileMenuOpen(false);
+  const scrollOrNavigate = (link) => {
+    // Handle in-page anchors (like #about)
+    if (link.startsWith("#")) {
+      if (location.pathname !== "/") {
+        navigate("/", { replace: false });
+        setTimeout(() => {
+          document.querySelector(link)?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      } else {
+        document.querySelector(link)?.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate(link);
+    }
+    handleLinkClick();
   };
 
   const links = [
-    {
-      name: "ABOUT ME",
-      link: "about",
-    },
-    {
-      name: "EXPERIENCE",
-      link: "experience",
-    },
-    {
-      name: "EDUCATION",
-      link: "education",
-    },
-    {
-      name: "PROJECTS",
-      link: "projects",
-    },
-    {
-      name: "CONTACT",
-      link: "contact",
-    },
+    { name: "ABOUT ME", link: "#about" },
+    { name: "EXPERIENCE", link: "#experience" },
+    { name: "EDUCATION", link: "#experience" },
+    { name: "PROJECTS", link: "/projects" },
+    { name: "CONTACT", link: "#contact" },
   ];
 
   return (
@@ -51,7 +48,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-xl font-bold font-display">
-          <NavLink href="/">
+          <NavLink to="/">
             <i className="fas fa-code mr-2"></i>Surafel Zewdu
           </NavLink>
         </h1>
@@ -59,17 +56,13 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-10">
           {links.map((link) => (
-            <NavLink
+            <button
               key={link.name}
-              to={link.link}
-              className={({ isActive }) =>
-                `relative text-foreground text-sm font-[Roboto, sans-serif] transition-colors hover:font-bold animated-underline font-bold ${
-                  isActive ? " border-b-4 border-foreground" : ""
-                }`
-              }
+              onClick={() => scrollOrNavigate(link.link)}
+              className="relative text-foreground text-sm font-[Roboto,sans-serif] transition-colors hover:font-bold animated-underline font-bold"
             >
               {link.name}
-            </NavLink>
+            </button>
           ))}
         </div>
 
@@ -98,22 +91,18 @@ export default function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-background border-t border-border">
           <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col space-y-4">
             {links.map((link) => (
-              <NavLink
+              <button
                 key={link.name}
-                to={link.link}
-                className={({ isActive }) =>
-                  `text-foreground text-sm font-[Roboto, sans-serif] transition-colors hover:font-bold py-2 border-b border-border/50 last:border-b-0 ${
-                    isActive ? "font-bold" : ""
-                  }`
-                }
-                onClick={handleLinkClick}
+                onClick={() => scrollOrNavigate(link.link)}
+                className="text-foreground text-sm font-[Roboto,sans-serif] transition-colors hover:font-bold py-2 border-b border-border/50 last:border-b-0"
               >
                 {link.name}
-              </NavLink>
+              </button>
             ))}
           </div>
         </div>
