@@ -17,7 +17,7 @@ export default function Experience() {
             </h3>
             <div className="border-l-4 border-foreground pl-6 space-y-8">
               {/* MMCY Tech */}
-              <div className="glass-effect p-6">
+              <div className="glass-effect p-6 box">
                 <div className="flex justify-between items-start mb-3">
                   <a
                     href="https://www.mmcyltd.com"
@@ -39,7 +39,7 @@ export default function Experience() {
               </div>
 
               {/* Ethiopian Road Authority */}
-              <div className="glass-effect p-6">
+              <div className="glass-effect p-6 box">
                 <div className="flex justify-between items-start mb-3">
                   <a
                     href="https://www.era.gov.et"
@@ -67,7 +67,7 @@ export default function Experience() {
               </div>
 
               {/* Crooze Company */}
-              <div className="glass-effect p-6">
+              <div className="glass-effect p-6 box">
                 <div className="flex justify-between items-start mb-3">
                   <a
                     href="https://www.crooze.com"
@@ -97,7 +97,7 @@ export default function Experience() {
             </h3>
             <div className="border-l-4 border-accent pl-6 space-y-8">
               {/* MMCY Bootcamp */}
-              <div className="glass-effect p-6">
+              <div className="glass-effect p-6 box">
                 <div className="flex justify-between items-start mb-3">
                   <a
                     href="https://www.mmcy.com/bootcamp"
@@ -118,7 +118,7 @@ export default function Experience() {
               </div>
 
               {/* BSc Computer Science */}
-              <div className="glass-effect p-6">
+              <div className="glass-effect p-6 box">
                 <div className="flex justify-between items-start mb-3">
                   <a
                     href="https://www.hilcoe.edu.et"
@@ -139,7 +139,7 @@ export default function Experience() {
               </div>
 
               {/* Microsoft Azure */}
-              <div className="glass-effect p-6">
+              <div className="glass-effect p-6 box">
                 <div className="flex justify-between items-start mb-3">
                   <a
                     href="https://learn.microsoft.com/en-us/certifications/azure-fundamentals/"
