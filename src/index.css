@@ -64,6 +64,8 @@ html.dark {
 body {
   font-family: "Inter", sans-serif;
    font-family: monospace;
+   word-spacing: 2px;
+   letter-spacing: -0.5px;
 }
 
 .font-display {
@@ -166,7 +168,6 @@ body {
 
 /* Boxy containers */
 .box {
-  background-color: var(--background);
   transition: all 0.3s ease;
 }
 

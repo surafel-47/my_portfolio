@@ -12,7 +12,6 @@ export default function Home() {
       <PinnedProjectsSection />
       <CertificatesSection />
       <ContactSection />
-      <Footer />
     </main>
   );
 }
