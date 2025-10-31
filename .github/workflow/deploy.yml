@@ -2,6 +2,7 @@ name: Deploy Portfolio App to GitHub Pages
 
 # Trigger the workflow on pushes to main branch
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
