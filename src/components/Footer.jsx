@@ -71,7 +71,9 @@ export default function Footer() {
                         className="flex items-center gap-2"
                       >
                         {link.icon && <i className={link.icon}></i>}
-                        <span className="animated-underline">{link.label}</span>
+                        <span className="animated-underline-white">
+                          {link.label}
+                        </span>
                       </a>
                     ) : link.link.startsWith("#") ? (
                       <NavLink
@@ -82,14 +84,18 @@ export default function Footer() {
                         }}
                         className=" flex items-center gap-2"
                       >
-                        <span className="animated-underline">{link.label}</span>
+                        <span className="animated-underline-white">
+                          {link.label}
+                        </span>
                       </NavLink>
                     ) : (
                       <NavLink
                         to={link.link}
                         className="text-muted-foreground flex items-center gap-2"
                       >
-                        <span className="animated-underline">{link.label}</span>
+                        <span className="animated-underline-white">
+                          {link.label}
+                        </span>
                       </NavLink>
                     )}
                   </li>

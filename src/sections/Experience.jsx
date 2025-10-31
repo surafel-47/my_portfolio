@@ -5,7 +5,7 @@ export default function Experience() {
       className="py-16 max-w-6xl mx-auto bg-gradient-to-b from-background to-background"
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center text-foreground font-[Roboto, sans-serif]">
+        <h2 className="text-3xl font-bold mb-12 text-center text-foreground ">
           Experience &amp; Education
         </h2>
         <div className="grid md:grid-cols-2 gap-12">

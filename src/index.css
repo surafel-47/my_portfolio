@@ -93,6 +93,27 @@ body {
   width: 100%;
 }
 
+/* Animated underline effect */
+.animated-underline-white {
+  position: relative;
+}
+
+.animated-underline-white::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.animated-underline-white:hover::after {
+  width: 100%;
+}
+
+
 /* Animated fill effect for buttons */
 .animated-fill {
   position: relative;

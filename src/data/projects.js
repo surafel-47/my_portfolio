@@ -182,7 +182,7 @@ export const certificates = [
     issuedBy: "MMCY TECH",
     issuedByLink: "https://mmcy.com",
     image: "/certificates/mmcy_full_stack/preview.png",
-    downloadLink: "/certificates/mmcy_full_stack/Surafel Zewdu - Full Stack Web Dev Certificate",
+    downloadLink: "/certificates/mmcy_full_stack/Surafel Zewdu - Full Stack Web Dev Certificate.pdf",
     issueDate: "",
     expiryDate: "",
     credentialId: "",

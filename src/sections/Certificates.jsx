@@ -69,6 +69,7 @@ function CertificateCard({ certificate }) {
         {/* Download Button */}
         <a
           href={certificate.downloadLink}
+          download
           className="w-full flex items-center justify-center gap-2 px-4 py-2 border border-foreground bg-foreground text-background hover:text-foreground animated-fill-opp  text-sm font-medium"
         >
           <i className="fas fa-download text-xs"></i>

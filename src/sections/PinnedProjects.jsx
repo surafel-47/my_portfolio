@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import ProjectPreview from "../components/ProjectPreview.jsx";
+import { NavLink } from "react-router-dom";
 
 export default function PinnedProjectsSection() {
   const pinnedProjects = [];
@@ -36,13 +37,13 @@ export default function PinnedProjectsSection() {
       </div>
 
       <div className="flex justify-center">
-        <a
-          href="#projects"
+        <NavLink
+          to={"projects"}
           className="group inline-flex items-center box gap-3 px-8 py-4 animated-fill-opp transition-colors bg-foreground text-background border border-foreground hover:text-foreground cursor-pointer"
         >
           <span>View All Projects</span>
           <i className="fas fa-arrow-right"></i>
-        </a>
+        </NavLink>
       </div>
     </section>
   );

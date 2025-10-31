@@ -22,9 +22,13 @@ export default function HeroSection() {
             clean code and smooth UX.
           </p>
           <div class="flex gap-4 pt-4">
-            <button class="px-8 py-3 bg-foreground text-background animated-fill-opp box border hover:border-foreground transition-colors  hover:text-foreground cursor-pointer  font-semibold">
+            <a
+              href="/surafel_zewdu_cv.pdf"
+              download
+              class="px-8 py-3 bg-foreground text-background animated-fill-opp box border hover:border-foreground transition-colors  hover:text-foreground cursor-pointer  font-semibold"
+            >
               Download CV
-            </button>
+            </a>
             <a
               href="#contact"
               class="px-8 py-3 border-2 border-foreground text-foreground box  font-semibold animated-fill cursor-pointer  hover:text-white transition-all"
