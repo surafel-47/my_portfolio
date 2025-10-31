@@ -74,7 +74,9 @@ export default function ProjectDetailModal({ project, onClose }) {
             <div className="relative bg-muted">
               <div className="aspect-video md:aspect-auto md:h-96 overflow-hidden">
                 <img
-                  src={project.media[currentImageIndex] || "/placeholder.svg"}
+                  src={
+                    project.media[currentImageIndex] || "/projectFallback.svg"
+                  }
                   alt={`${project.title} - Image ${currentImageIndex + 1}`}
                   className="w-full h-full object-cover"
                 />
@@ -122,7 +124,7 @@ export default function ProjectDetailModal({ project, onClose }) {
                     }`}
                   >
                     <img
-                      src={image || "/placeholder.svg"}
+                      src={image || "/projectFallback.svg"}
                       alt={`Thumbnail ${idx + 1}`}
                       className="w-full h-full object-cover"
                     />

@@ -16,7 +16,7 @@ export default function ProjectPreview({ project }) {
   }, [project.media]);
 
   const currentImage =
-    project.media?.[currentImageIndex] || "/project-showcase.jpg";
+    project.media?.[currentImageIndex] || "/projectFallback.svg";
 
   return (
     <>
@@ -27,7 +27,7 @@ export default function ProjectPreview({ project }) {
         {/* Image Carousel Container */}
         <div className="relative h-64 md:h-[500px] overflow-hidden">
           <img
-            src={currentImage || "../assets/react.svg"}
+            src={currentImage}
             alt={project.title}
             className="w-full h-full object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110"
           />
