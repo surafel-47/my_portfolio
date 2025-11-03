@@ -7,14 +7,16 @@ export const ContactInfos = [
         icon: "fas fa-envelope",
         color: "hover:text-blue-500",
     },
+
     {
         id: 2,
-        label: "Telegram",
-        value: "@Zufan47",
-        link: "https://t.me/Zufan47",
-        icon: "fab fa-telegram",
-        color: "hover:text-blue-400",
+        label: "WhatsApp",
+        value: "+251 965 651 110",
+        link: "https://wa.me/251965651110",
+        icon: "fab fa-whatsapp",
+        color: "hover:text-green-500",
     },
+
     {
         id: 3,
         label: "Phone",
@@ -39,6 +41,15 @@ export const ContactInfos = [
         icon: "fab fa-linkedin",
         color: "hover:text-blue-600",
     },
+    {
+        id: 6,
+        label: "Telegram",
+        value: "@Zufan47",
+        link: "https://t.me/Zufan47",
+        icon: "fab fa-telegram",
+        color: "hover:text-blue-400",
+    }
 ];
+
 
 
