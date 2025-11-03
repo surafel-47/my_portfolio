@@ -22,7 +22,7 @@ export default function Experience() {
                 <div className="glass-effect p-6 box">
                   <div className="flex justify-between items-start mb-3">
                     <a
-                      href="https://www.mmcyltd.com"
+                      href="https://mmcy.com"
                       target="_blank"
                       className="text-foreground hover:text-accent underline transition-colors font-semibold text-lg"
                     >
@@ -34,10 +34,35 @@ export default function Experience() {
                       <span>2024 - Present</span>
                     </div>
                   </div>
-                  <p className="text-secondary-text text-sm">
-                    Developing internal tools and automating processes for
-                    improved productivity and workflow.
-                  </p>
+                  <ul className="text-secondary-text text-sm list-disc list-inside space-y-3">
+                    <li>
+                      <strong>Internal Asset Management System:</strong>{" "}
+                      Developed a unified system for:
+                      <ul className="list-disc list-inside ml-5 space-y-1">
+                        <li>Item requests & purchase requisitions</li>
+                        <li>Asset movement tracking</li>
+                        <li>
+                          Improved reporting efficiency across departments
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong class="font-bold">Automated KPI Reports:</strong>{" "}
+                      Built 20+ reports to:
+                      <ul className="list-disc list-inside ml-5 space-y-1">
+                        <li>Enable faster ISO evaluations</li>
+                        <li>Support data-driven decision-making</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>HR System QA:</strong> Conducted testing to:
+                      <ul className="list-disc list-inside ml-5 space-y-1">
+                        <li>Identify and fix 15+ critical bugs</li>
+                        <li>Resolve 40+ minor issues</li>
+                        <li>Enhance system reliability and security</li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
 
                 {/* Ethiopian Road Authority */}

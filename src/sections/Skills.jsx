@@ -1,14 +1,16 @@
 export default function SkillsSection() {
   const skills = [
     {
-      icon: "fab fa-js-square",
-      title: "JavaScript",
-      description: "Modern ES6+ with async/await and functional programming",
+      icon: "fab fa-react",
+      title: "React & Zustand",
+      description:
+        "Modern React with hooks, context, and lightweight state management using Zustand",
     },
+
     {
       icon: "fab fa-vuejs",
       title: "Vue.js",
-      description: "Composition API, state management with Pinia",
+      description: "Vue 3 Composition API, state management with Pinia",
     },
     {
       icon: "fab fa-python",
@@ -26,14 +28,9 @@ export default function SkillsSection() {
       description: "PostgreSQL, MongoDB, Firebase, Redis",
     },
     {
-      icon: "fab fa-git-alt",
-      title: "DevOps",
-      description: "Git, Docker, CI/CD, AWS, Vercel deployment",
-    },
-    {
       icon: "fas fa-tools",
       title: "Tools & More",
-      description: "Webpack, Vite, Jest, Figma, VS Code",
+      description: "Git, Vite, CI/CD, Vercel deployment,Vite",
     },
   ];
 
@@ -43,7 +40,7 @@ export default function SkillsSection() {
 
       <div className="max-w-6xl mx-auto">
         <h3 className="text-4xl font-bold mb-12 text-center">
-          Skills & Technologies
+          Skills & Technologies I've Learned
         </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -12,8 +12,7 @@ export default function CertificatesSection() {
             Certifications
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Professional certifications and credentials demonstrating expertise
-            in cloud technologies and software development.
+            Professional certifications and bootcamps I've Compeleted
           </p>
         </div>
 

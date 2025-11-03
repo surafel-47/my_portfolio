@@ -113,7 +113,9 @@ export default function Footer() {
           <p className="text-sm">
             © {currentYear} Surafel Zewdu.
             <br />
-            <p className="text-xs">I made this with React and Tailwind CSS.</p>
+            <span className="text-xs">
+              I made this with React and Tailwind CSS.
+            </span>
           </p>
           <span className="text-[15px]">
             Design inspiration from{" "}

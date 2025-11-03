@@ -23,18 +23,18 @@ export default function PinnedProjectsSection() {
       {/* Section Header */}
       <div className="mb-16 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground text-balance">
-          Featured Projects
+          My Pinned Projects
         </h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Explore my pinned projects showcasing expertise in full-stack
-          development, mobile apps, and automation solutions.
+          Explore my pinned projects showing my experience in full-stack and
+          mobile development projects.
         </p>
       </div>
 
       {/* Projects Grid */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
         {pinnedProjects.map((project) => (
-          <ProjectPreview key={project.id} project={project} />
+          <ProjectPreview key={project.title} project={project} />
         ))}
       </div>
 

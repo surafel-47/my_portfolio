@@ -1,8 +1,23 @@
 // import ProfileImage from "/profile.jpg";
+import { useEffect, useState } from "react";
 import ProfileImage from "../assets/react.svg";
 import { ContactInfos } from "../data/contact-info.js";
 
 export default function HeroSection() {
+  const descText =
+    "I'm a full-stack developer. I work with Flutter, Vue.js/React.js and Django/Express to build mobile and web apps with clean APIs and smooth frontends";
+  const [typewriterText, setTypewriterText] = useState("");
+  useEffect(() => {
+    let i = 0;
+    const timer = setInterval(() => {
+      setTypewriterText(descText.slice(0, i));
+      i++;
+      if (i > descText.length) clearInterval(timer);
+    }, 30);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section id="about" class="bg-background pt-32 pb-20 px-6">
       <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -12,14 +27,11 @@ export default function HeroSection() {
               Full-Stack Developer
             </h2>
             <p class="text-xl text-secondary-text font-display">
-              Flutter · Vue.js · Django · Express
+              Flutter · Vue.js · Django · Express · React
             </p>
           </div>
-          <p class="text-lg text-secondary-text ">
-            I'm a full-stack developer specializing in Flutter, Vue.js, Django,
-            and Express. I build mobile-first and web applications that are
-            fast, scalable, and focused on solving real-world problems with
-            clean code and smooth UX.
+          <p class="text-lg text-secondary-text h-30 lg:h-20">
+            {typewriterText}.
           </p>
           <div class="flex gap-4 pt-4">
             <a
@@ -31,7 +43,7 @@ export default function HeroSection() {
             </a>
             <a
               href="#contact"
-              class="px-8 py-3 border-2 border-foreground text-foreground box  font-semibold animated-fill cursor-pointer  hover:text-white transition-all"
+              class="px-8 py-3 border-1 border-foreground text-foreground box  font-semibold animated-fill cursor-pointer  hover:text-white transition-all"
             >
               Get in Touch
             </a>
