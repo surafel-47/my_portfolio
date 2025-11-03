@@ -17,7 +17,9 @@ export default function PinnedProjectsSection() {
   }
 
   return (
-    <section id="pinned-projects" className="py-20 max-w-[80vw] mx-auto px-4">
+    <section id="pinned-projects" className="py-15 max-w-[80vw] mx-auto px-4">
+      <div class="max-w-[80vw] mx-auto bg-foreground h-[1px] mb-7"></div>
+
       {/* Section Header */}
       <div className="mb-16 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground text-balance">
@@ -34,7 +36,6 @@ export default function PinnedProjectsSection() {
         {pinnedProjects.map((project) => (
           <ProjectPreview key={project.id} project={project} />
         ))}
-        
       </div>
 
       <div className="flex justify-center">

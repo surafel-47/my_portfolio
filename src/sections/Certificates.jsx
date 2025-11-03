@@ -3,7 +3,9 @@ import { certificates } from "../data/projects";
 export default function CertificatesSection() {
   return (
     <>
-      <section id="certificates" className="py-20 max-w-[80vw] mx-auto px-4">
+      <section id="certificates" className="pb-10  max-w-[80vw] mx-auto px-4">
+        <div class="max-w-[80vw] mx-auto bg-foreground h-[1px] mb-7"></div>
+
         {/* Section Header */}
         <div className="mb-16 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground text-balance">

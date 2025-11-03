@@ -2,6 +2,8 @@ import { ContactInfos } from "../data/contact-info.js";
 export default function ContactSection() {
   return (
     <section id="contact" className="py-20 max-w-[80vw] mx-auto px-4">
+      <div class="max-w-[80vw] mx-auto bg-foreground h-[1px] mb-7"></div>
+
       {/* Section Header */}
       <div className="mb-16 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground text-balance">
