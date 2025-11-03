@@ -43,7 +43,7 @@ export default function HeroSection() {
             </a>
             <a
               href="#contact"
-              class="px-8 py-3 border-1 border-foreground text-foreground box  font-semibold animated-fill cursor-pointer  hover:text-white transition-all"
+              class="px-8 py-3 border-1 border-foreground text-foreground box font-semibold animated-fill cursor-pointer  hover:text-background transition-all"
             >
               Get in Touch
             </a>
@@ -54,7 +54,6 @@ export default function HeroSection() {
                 key={info.id}
                 href={info.link}
                 target="_blank"
-                rel="noopener noreferrer"
                 className={`text-2xl text-foreground animated-fill hover:text-background hover:border-background border border-[#795c5caf] p-1`}
               >
                 <i className={info.icon}></i>

@@ -43,6 +43,8 @@ export default function PinnedProjectsSection() {
           to={"projects"}
           className="group inline-flex items-center box gap-3 px-8 py-4 animated-fill-opp transition-colors bg-foreground text-background border border-foreground hover:text-foreground cursor-pointer"
         >
+          <i className="fas fa-folder-open"></i>
+
           <span>View All Projects</span>
           <i className="fas fa-arrow-right"></i>
         </NavLink>
